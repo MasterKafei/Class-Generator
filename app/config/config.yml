@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+    - { resource: settings.yml }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -35,6 +36,10 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    paths:
+        "%kernel.project_dir%/src/AppBundle/Resources/views/Layout": Layout
+        "%kernel.project_dir%/src/AppBundle/Resources/views/Mail": Mail
+        "%kernel.project_dir%/src/AppBundle/Resources/views/Page": Page
 
 # Doctrine Configuration
 doctrine:
