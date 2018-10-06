@@ -1,0 +1,5 @@
+app_student_edition_edit_student:
+    path:   /edit_student/{id}
+    defaults: { _controller: 'AppBundle:Student\Edition:editStudent' }
+    requirements:
+        id: \d+

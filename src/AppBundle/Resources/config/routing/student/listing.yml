@@ -1,0 +1,5 @@
+app_student_listing_list_student:
+    path: /list_student/{id}
+    defaults: { _controller: 'AppBundle:Student\Listing:listStudent' }
+    requirements:
+        id: \d+

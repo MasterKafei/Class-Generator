@@ -1,0 +1,19 @@
+app_student_creation:
+    prefix: /creation/
+    resource: "creation.yml"
+
+app_student_deletion:
+    prefix: /deletion/
+    resource: "deletion.yml"
+
+app_student_edition:
+    prefix: /edition/
+    resource: "edition.yml"
+
+app_student_listing:
+    prefix: /listing/
+    resource: "listing.yml"
+
+app_student_showing:
+    prefix: /showing/
+    resource: "showing.yml"

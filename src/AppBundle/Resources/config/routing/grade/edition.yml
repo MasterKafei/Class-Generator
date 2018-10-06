@@ -1,0 +1,5 @@
+app_grade_edition_edit_grade:
+    path:   /edit_grade/{id}
+    defaults: { _controller: 'AppBundle:Grade\Edition:editGrade' }
+    requirements:
+        id: \d+

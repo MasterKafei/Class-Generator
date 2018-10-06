@@ -1,0 +1,5 @@
+app_student_showing_show_student:
+    path:   /show_student/{id}
+    defaults: { _controller: 'AppBundle:Student\Showing:showStudent' }
+    requirements:
+        id: \d+

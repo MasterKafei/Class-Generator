@@ -1,6 +1,14 @@
+app_grade:
+    resource: "grade/all.yml"
+    prefix: /grade/
+
 app_home:
     resource: "home/all.yml"
     prefix: /
+
+app_student:
+    resource: "student/all.yml"
+    prefix: /student/
 
 app_user:
     resource: "user/all.yml"

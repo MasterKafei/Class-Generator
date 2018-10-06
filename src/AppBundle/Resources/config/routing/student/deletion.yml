@@ -1,0 +1,5 @@
+app_student_deletion_delete_student:
+    path: /delete_student/{id}
+    defaults: { _controller: 'AppBundle:Student\Deletion:deleteStudent' }
+    requirements:
+        id: \d+

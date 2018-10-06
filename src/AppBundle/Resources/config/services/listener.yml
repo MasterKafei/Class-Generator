@@ -1,7 +1,15 @@
 services:
+
+    app.listener.grade:
+        class: AppBundle\Service\Listener\GradeListener
+        parent: app.util.abstract_container_aware
+        tags:
+            - { name: doctrine.orm.entity_listener, entity: AppBundle\Entity\Grade, event: prePersist }
+            - { name: doctrine.orm.entity_listener, entity: AppBundle\Entity\Grade, event: preUpdate }
+
     app.listener.user:
         class: AppBundle\Service\Listener\UserListener
         parent: app.util.abstract_container_aware
         tags:
-        - { name: doctrine.orm.entity_listener, entity: AppBundle\Entity\User, event: prePersist }
-        - { name: doctrine.orm.entity_listener, entity: AppBundle\Entity\User, event: preUpdate}
+            - { name: doctrine.orm.entity_listener, entity: AppBundle\Entity\User, event: prePersist }
+            - { name: doctrine.orm.entity_listener, entity: AppBundle\Entity\User, event: preUpdate }

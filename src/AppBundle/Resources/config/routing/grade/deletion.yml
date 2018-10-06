@@ -1,0 +1,5 @@
+app_grade_deletion_delete_grade:
+    path:   /delete_grade/{id}
+    defaults: { _controller: 'AppBundle:Grade\Deletion:deleteGrade' }
+    requirements:
+        id: \d+

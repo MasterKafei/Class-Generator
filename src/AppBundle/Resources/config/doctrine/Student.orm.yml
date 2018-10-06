@@ -1,0 +1,31 @@
+AppBundle\Entity\Student:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\StudentRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        firstName:
+            type: string
+            length: 255
+        lastName:
+            type: string
+            length: 255
+        gender:
+            type: boolean
+        hasGlasses:
+            type: boolean
+    manyToOne:
+        grade:
+            targetEntity: AppBundle\Entity\Grade
+            cascade: [persist]
+            inversedBy: students
+            joinColumn:
+                name: grade_id
+                referencedColumnName: id
+                nullable: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,3 @@
+app_grade_creation_create_grade:
+    path:   /create_grade/
+    defaults: { _controller: 'AppBundle:Grade\Creation:createGrade' }

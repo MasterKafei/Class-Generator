@@ -1,0 +1,5 @@
+app_grade_listing_list_grade:
+    path:   /list_grade/
+    defaults: { _controller: 'AppBundle:Grade\Listing:listGrade' }
+    requirements:
+        id: \d+

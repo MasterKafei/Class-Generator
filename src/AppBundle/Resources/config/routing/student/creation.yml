@@ -1,0 +1,5 @@
+app_student_creation_create_student:
+    path:   /create_student/{id}
+    defaults: { _controller: 'AppBundle:Student\Creation:createStudent' }
+    requirements:
+        id: \d+

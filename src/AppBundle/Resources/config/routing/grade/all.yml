@@ -1,0 +1,19 @@
+app_grade_creation:
+    prefix: /creation/
+    resource: "creation.yml"
+
+app_grade_deletion:
+    prefix: /deletion/
+    resource: "deletion.yml"
+
+app_grade_edition:
+    prefix: /edition/
+    resource: "edition.yml"
+
+app_grade_listing:
+    prefix: /listing/
+    resource: "listing.yml"
+
+app_grade_showing:
+    prefix: /showing/
+    resource: "showing.yml"

@@ -1,0 +1,5 @@
+app_grade_showing_show_grade:
+    path:   /show_grade/{id}
+    defaults: { _controller: 'AppBundle:Grade\Showing:showGrade' }
+    requirements:
+        id: \d+
