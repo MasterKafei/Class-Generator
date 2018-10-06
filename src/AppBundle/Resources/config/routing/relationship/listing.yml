@@ -1,0 +1,5 @@
+app_relationship_listing_list_relationship:
+    path:   /list_relationship/{id}
+    defaults: { _controller: 'AppBundle:Relationship\Listing:listRelationship' }
+    requirements:
+        id: \d+

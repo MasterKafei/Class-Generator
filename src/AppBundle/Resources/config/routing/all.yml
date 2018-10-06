@@ -6,6 +6,10 @@ app_home:
     resource: "home/all.yml"
     prefix: /
 
+app_relationship:
+    resource: "relationship/all.yml"
+    prefix: /relationship/
+
 app_student:
     resource: "student/all.yml"
     prefix: /student/

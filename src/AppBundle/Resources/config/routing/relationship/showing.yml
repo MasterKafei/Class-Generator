@@ -1,0 +1,5 @@
+app_relationship_showing_show_relationship:
+    path:   /show_relationship/{id}
+    defaults: { _controller: 'AppBundle:Relationship\Showing:showRelationship' }
+    requirements:
+        id: \d+

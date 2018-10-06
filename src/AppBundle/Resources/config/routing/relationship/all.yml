@@ -1,0 +1,19 @@
+app_relationship_creation:
+    prefix: /creation/
+    resource: "creation.yml"
+
+app_relationship_deletion:
+    prefix: /deletion/
+    resource: "deletion.yml"
+
+app_relationship_edition:
+    prefix: /edition/
+    resource: "edition.yml"
+
+app_relationship_listing:
+    prefix: /listing/
+    resource: "listing.yml"
+
+app_relationship_showing:
+    prefix: /showing/
+    resource: "showing.yml"

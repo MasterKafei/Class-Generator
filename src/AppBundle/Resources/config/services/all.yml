@@ -4,3 +4,4 @@ imports:
   - { resource: 'listener.yml' }
   - { resource: 'mailer.yml' }
   - { resource: 'util.yml' }
+  - { resource: 'validator.yml' }

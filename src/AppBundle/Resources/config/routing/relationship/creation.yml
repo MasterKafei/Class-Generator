@@ -1,0 +1,5 @@
+app_relationship_creation_create_relationship:
+    path:   /create_relationship/{id}
+    defaults: { _controller: 'AppBundle:Relationship\Creation:createRelationship' }
+    requirements:
+        id: \d+

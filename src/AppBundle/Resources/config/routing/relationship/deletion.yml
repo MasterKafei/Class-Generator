@@ -1,0 +1,5 @@
+app_relationship_deletion_delete_relationship:
+    path:   /delete_relationship/{id}
+    defaults: { _controller: 'AppBundle:Relationship\Deletion:deleteRelationship' }
+    requirements:
+        id: \d+

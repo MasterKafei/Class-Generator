@@ -1,0 +1,30 @@
+AppBundle\Entity\Relationship:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\RelationshipRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        type:
+            type: string
+            length: 255
+    manyToOne:
+        source:
+            targetEntity: AppBundle\Entity\Student
+            cascade: [persist]
+            joinColumn:
+                name: source_id
+                referencedColumnName: id
+                unique: false
+        target:
+            targetEntity: AppBundle\Entity\Student
+            cascade: [persist]
+            joinColumn:
+                name: target_id
+                referencedColumnName: id
+                unique: false
+    lifecycleCallbacks: {  }

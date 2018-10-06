@@ -1,0 +1,5 @@
+app_relationship_edition_edit_relationship:
+    path:   /edit_relationship/{id}
+    defaults: { _controller: 'AppBundle:Relationship\Edition:editRelationship' }
+    requirements:
+        id: \d+

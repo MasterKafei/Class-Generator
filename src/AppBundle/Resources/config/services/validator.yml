@@ -1,0 +1,6 @@
+services:
+    app.validator.relationship:
+        class: AppBundle\Validator\RelationshipValidator
+        arguments: ['@doctrine.orm.entity_manager']
+        tags:
+            - { name: validator.constraint_validator }
